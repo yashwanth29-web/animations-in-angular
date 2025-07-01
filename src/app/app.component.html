@@ -1,0 +1,56 @@
+<div class="container">
+  <!-- Row 1 -->
+  <div class="item">
+    <button (click)="toggle('fade')">Fade</button>
+    <div *ngIf="show.fade" @fade class="box">Fade</div>
+  </div>
+
+  <div class="item">
+    <button (click)="toggle('slidex')">Slide X</button>
+    <div *ngIf="show.slidex" @slidex class="box">Slide X</div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="item">
+    <button (click)="toggle('slideY')">Slide Y</button>
+    <div *ngIf="show.slideY" @slideY class="box">Slide Y</div>
+  </div>
+
+  <div class="item">
+    <button (click)="toggleCollapse()">Collapse</button>
+    <div [@collapse]="collapseState" class="box">Collapse</div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="item">
+    <button (click)="toggle('zoom')">Zoom</button>
+    <div *ngIf="show.zoom" @zoom class="box">Zoom</div>
+  </div>
+
+  <div class="item">
+    <button (click)="toggle('rotate')">Rotate</button>
+    <div *ngIf="show.rotate" @rotate class="box">Rotate</div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="item">
+    <button (click)="toggleShake()">Shake</button>
+    <div [@shake]="shakeTrigger" class="box">Shake</div>
+  </div>
+
+  <div class="item">
+    <button (click)="toggle('flipY')">Flip Y</button>
+    <div *ngIf="show.flipY" @flipY class="box">Flip Y</div>
+  </div>
+
+  <!-- Row 5 -->
+  <div class="item">
+    <button (click)="toggle('skew')">Skew</button>
+    <div *ngIf="show.skew" @skew class="box">Skew</div>
+  </div>
+
+  <div class="item">
+    <button (click)="toggle('bounce')">Bounce</button>
+    <div *ngIf="show.bounce" @bounce class="box">Bounce</div>
+  </div>
+</div>
